@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocket Relay</title>
+    <script src="/js/websocket-opener.js"></script>
+    <style>
+		xmp {
+			margin: 0px;
+			font-size: 11pt;
+		}
+	</style>
+</head>
+<body>
+
+<form action="/ws/post" method="post">
+    <label for="content">Send via websocket:</label><br/>
+    <textarea id="content" rows="5" cols="120" name="message"></textarea><br/>
+    <input type="submit" value="Submit">
+</form>
+
+<div id="holder">
+    Waiting for Websocket...
+</div>
+</body>
+</html>
